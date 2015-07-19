@@ -4,7 +4,7 @@ layout: doc_page
 
 Content of build.sbt
 --------------------
-{% highlight scala %}
+```scala
 
 libraryDependencies ++= Seq(
   "com.amazonaws" % "aws-java-sdk" % "1.9.23" exclude("common-logging", "common-logging"),
@@ -107,4 +107,4 @@ assemblyMergeStrategy in assembly := {
     oldStrategy(x)
 }
 
-{% endhighlight %}
+```
