@@ -1,3 +1,4 @@
+```
 libraryDependencies ++= Seq(
   "com.amazonaws" % "aws-java-sdk" % "1.9.23" exclude("common-logging", "common-logging"),
   "org.joda" % "joda-convert" % "1.7",
@@ -59,7 +60,6 @@ libraryDependencies ++= Seq(
     ExclusionRule("com.fasterxml.jackson.module")
   ),
   "io.druid.extensions" % "druid-hdfs-storage" % "0.7.3" excludeAll (
-- show quoted text -
   case path if path contains "META-INF/jersey-module-version" => MergeStrategy.first
   case path if path contains ".properties" => MergeStrategy.first
   case path if path contains ".class" => MergeStrategy.first
@@ -67,3 +67,4 @@ libraryDependencies ++= Seq(
     val oldStrategy = (assemblyMergeStrategy in assembly).value
     oldStrategy(x)
 }
+```
